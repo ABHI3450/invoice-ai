@@ -6,7 +6,7 @@ It leverages a multi-agent AI architecture to transform raw invoice uploads into
 
 🌐 Live Project
 
-Live Demo: https://your-vercel-url.vercel.app
+Live Demo: https://vercel.com/abhisheks-projects-504aca49/invoice-ai
 
 GitHub Repository: https://github.com/ABHI3450/invoice-ai
 
