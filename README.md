@@ -1,78 +1,134 @@
-🚀 INVOICE AI: Next-Gen Multi-Agent Processing
+🚀 Invoice AI
+Next-Gen Multi-Agent Invoice Processing Platform
 
-Invoice AI is a professional SaaS platform designed to automate financial document workflows. By leveraging a multi-agent AI architecture, the system transforms raw invoice uploads into structured, compliant, and fraud-checked data.
+Invoice AI is a SaaS-style AI platform that automates end-to-end financial document workflows.
+It leverages a multi-agent AI architecture to transform raw invoice uploads into structured, fraud-checked, and compliance-validated data ready for analytics and reporting.
 
 🌐 Live Project
-Live Demo: [Insert Your Vercel URL Here]
 
-GitHub Repository: https://www.github.com/ABHI3450/invoice-ai
+Live Demo: https://your-vercel-url.vercel.app
+
+GitHub Repository: https://github.com/ABHI3450/invoice-ai
 
 🤖 Multi-Agent AI Architecture
-The core differentiator of this project is its logical separation of tasks into specialized AI Agents:
 
-Ingestion Agent: Handles secure file uploads via Cloudinary and validates document integrity.
+Invoice AI processes each invoice through a specialized agentic workflow, where each agent focuses on a single responsibility.
 
-Classification Agent: Automatically categorizes invoices into "Services," "Goods," or "Medical" types.
+🕵️ Ingestion Agent
 
-Fraud & Anomaly Agent: Scans for duplicate invoices and flags suspicious or unusual total amounts.
+Secure upload of multi-format invoices (PDF, JPG, PNG)
 
-Compliance Agent: Simulates VAT/Tax logic to ensure documents meet financial standards (ZATCA/EU VAT).
+Validates file type, size, and integrity before processing
 
-Reporting Agent: Generates structured views of spend breakdown and vendor data.
+🏷️ Classification Agent
+
+Categorizes invoices (Utility, Medical, Goods, Services, etc.)
+
+Extracts metadata to route invoices to downstream checks
+
+🚩 Fraud Detection Agent
+
+Detects duplicate invoices and abnormal amount spikes
+
+Applies rule-based heuristics for anomaly detection and risk scoring
+
+⚖️ Compliance Agent
+
+Validates Tax IDs and critical invoice fields
+
+Simulates regional tax and financial compliance checks
+
+📊 Reporting Agent
+
+Aggregates processed invoice data
+
+Feeds analytics dashboards with spend, vendor, and compliance insights
 
 🛠️ Tech Stack
-Framework: Next.js 14 (App Router)
+Layer	Technology
+Frontend	Next.js 14 (App Router), TypeScript, Tailwind CSS
+Backend	Next.js Server Actions, Node.js
+Database	MongoDB Atlas (NoSQL)
+Authentication	Clerk (Email & Google OAuth)
+File Storage	Cloudinary
+UI Library	shadcn/ui, Lucide React
+📦 Features
+🔐 Secure Authentication
 
-Language: TypeScript
+Full login & sign-up via Clerk
 
-Database: MongoDB Atlas (NoSQL)
+Google OAuth and Email authentication
 
-Authentication: Clerk (Google & Email OAuth)
+📄 Invoice Upload & Management
 
-Image Handling: Cloudinary AI
+Drag-and-drop invoice uploads (PDF & Images)
 
-UI/UX: Tailwind CSS, Shadcn/UI, Lucide Icons
+Secure storage via Cloudinary + MongoDB
 
-🚀 Getting Started
-1. Prerequisites
-Node.js 18+ installed
+🤖 Multi-Agent Processing Flow
+Ingestion → Classification → Fraud Detection → Compliance → Reporting
 
-A MongoDB Atlas account
 
-A Clerk account
+Rule-based AI logic simulating realistic agent behavior
 
-A Cloudinary account
+📊 Analytics Dashboard
 
-2. Environment Setup
-Create a .env.local file in the root directory and add your keys:
+Total spend overview
+
+Number of invoices processed
+
+Risk and compliance status
+
+Vendor-level insights
+
+🎨 Product-Ready UI
+
+Clean, responsive SaaS dashboard
+
+Built with Tailwind CSS and shadcn/ui
+
+Consistent “Invoice AI” branding
+
+🚀 Local Development Setup
+1️⃣ Clone the Repository
+
+git clone https://github.com/ABHI3450/invoice-ai.git
+
+cd invoice-ai
+
+2️⃣ Install Dependencies
+
+Make sure Node.js 18+ is installed.
+
+npm install
+
+3️⃣ Configure Environment Variables
+
+Create a .env.local file in the project root:
 
 # CLERK AUTH
 NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=your_clerk_publishable_key
 CLERK_SECRET_KEY=your_clerk_secret_key
 
 # MONGODB DATABASE
-MONGODB_URL=
+MONGODB_URL=your_mongodb_connection_string
 
 # CLOUDINARY
 NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME=your_cloud_name
-CLOUDINARY_API_KEY=your_api_key
-CLOUDINARY_API_SECRET=your_api_secret
-3. Installation
-Bash
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
 
-# Install dependencies
-npm install
 
-# Start the development server
+Ensure Clerk, MongoDB Atlas, and Cloudinary are properly configured.
+
+4️⃣ Run the Development Server
+
 npm run dev
 
-📊 Evaluation Criteria Met
-✅ Authentication: Full login/signup flow implemented via Clerk.
 
-✅ Invoice Processing: End-to-end flow from upload to dashboard display.
+Open in browser:
 
-✅ AI Agent Logic: Rule-based classification and fraud scoring simulated in the processing flow.
+http://localhost:3000
 
-✅ Reporting: Dashboard overview of total spend and compliance status.
 
-✅ Branding: Fully customized UI reflecting the "Invoice AI" product vision.
+You can register a new account directly from the UI.
