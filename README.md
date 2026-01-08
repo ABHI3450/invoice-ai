@@ -4,10 +4,6 @@ Next-Gen Multi-Agent Invoice Processing Platform
 Invoice AI is a SaaS-style AI platform that automates end-to-end financial document workflows.
 It leverages a multi-agent AI architecture to transform raw invoice uploads into structured, fraud-checked, and compliance-validated data ready for analytics and reporting.
 
-🌐 Live Project
-
-Live Demo: https://vercel.com/abhisheks-projects-504aca49/invoice-ai
-
 GitHub Repository: https://github.com/ABHI3450/invoice-ai
 
 🤖 Multi-Agent AI Architecture
